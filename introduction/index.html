@@ -211,9 +211,38 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
       margin-bottom: 0;
     }
 
+    .intro-card .img_group {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .intro-card .img_position {
+      min-width: 0;
+      overflow: hidden;
+      border-radius: 0.4rem;
+    }
+
+    .intro-card .img_style {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
     @media screen and (max-width: 42em) {
       .intro-card {
         padding: 1rem;
+      }
+
+      .intro-card .img_group {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (max-width: 28em) {
+      .intro-card .img_group {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -252,36 +281,6 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
   </section>
 
   <section class="intro-card">
-  <h2 style="font-family: Arial, sans-serif;"><b>日常照片</b>：</h2>
-  <div class="img_group">
-   <div class="img_position"> 
-    <img class="img_style" src="/assets/img/Happy_time/1.jpg" alt = "">
-    <div class="img_caption"></div>
-   </div>
-
-   <div class="img_position"> 
-    <img class="img_style" src="/assets/img/Happy_time/2.jpg" alt = "">
-    <div class="img_caption"></div>
-   </div>
-   
-   <div class="img_position"> 
-    <img class="img_style" src="/assets/img/Happy_time/3.jpg" alt = "">
-    <div class="img_caption"></div>
-   </div>
-
-   <div class="img_position"> 
-    <img class="img_style" src="/assets/img/Happy_time/7.jpg" alt = "">
-    <div class="img_caption"></div>
-   </div>
-
-   <div class="img_position"> 
-    <img class="img_style" src="/assets/img/Happy_time/8.jpg" alt = "">
-    <div class="img_caption"></div>
-   </div>
-  </div>
-  </section>
-
-  <section class="intro-card">
   <h2 style="font-family: Arial, sans-serif;"><b>会议照片</b>：</h2>
   <div class="img_group">
 
@@ -295,6 +294,36 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
     <div class="img_caption"></div>
   </div>
 
+  </div>
+  </section>
+
+  <section class="intro-card">
+  <h2 style="font-family: Arial, sans-serif;"><b>日常照片</b>：</h2>
+  <div class="img_group">
+   <div class="img_position">
+    <img class="img_style" src="/assets/img/Happy_time/1.jpg" alt = "">
+    <div class="img_caption"></div>
+   </div>
+
+   <div class="img_position">
+    <img class="img_style" src="/assets/img/Happy_time/2.jpg" alt = "">
+    <div class="img_caption"></div>
+   </div>
+
+   <div class="img_position">
+    <img class="img_style" src="/assets/img/Happy_time/3.jpg" alt = "">
+    <div class="img_caption"></div>
+   </div>
+
+   <div class="img_position">
+    <img class="img_style" src="/assets/img/Happy_time/7.jpg" alt = "">
+    <div class="img_caption"></div>
+   </div>
+
+   <div class="img_position">
+    <img class="img_style" src="/assets/img/Happy_time/8.jpg" alt = "">
+    <div class="img_caption"></div>
+   </div>
   </div>
   </section>
 
