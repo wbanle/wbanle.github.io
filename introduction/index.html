@@ -211,6 +211,40 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
       margin-bottom: 0;
     }
 
+    .intro-card--overview {
+      font-family: Arial, sans-serif;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+
+    .intro-subsection + .intro-subsection {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #d9dde2;
+    }
+
+    .intro-subsection > h3 {
+      margin: 0 0 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 1.25rem;
+    }
+
+    .intro-subsection h4 {
+      margin: 1.4rem 0 0.5rem;
+      font-family: Arial, sans-serif;
+      font-size: 1.05rem;
+    }
+
+    .intro-subsection p,
+    .intro-subsection li {
+      line-height: 1.8;
+    }
+
+    .intro-subsection p:last-child,
+    .intro-subsection ol:last-child {
+      margin-bottom: 0;
+    }
+
     .intro-card .img_group {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -252,16 +286,70 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
     }
   </style>
 
-  <section class="intro-card">
+  <section class="intro-card intro-card--overview">
   <h2 style="font-family: Arial, sans-serif;"><b>实验室简介：</b></h2>
 
-<ul style="font-family: Arial, sans-serif; text-align: justify; text-justify: inter-ideograph; line-height: 1.7;">
- <li>欢迎光临南方医科大学PET成像实验室 SMU Positron Emission Computed Tomography Imaging Lab（SMU PET Lab），本实验室致力于研发应用于生物医学领域的PET成像技术。</li>
- <li>实验室依托单位是南方医科大学生物医学工程学院，广东省医学图像处理重点实验室, 广东省琶洲实验室</li>
- <li>本实验室由路利军教授组建于2012年的夏末秋初，先后获国家自然科学基金4项，国家科技部重点研发计划课题1项，广东省科技计划国际合作项目1项，广东省自然科学基金4项，教育部高等学校博士点基金1项，广东省质量工程校企联合实验室项目1项，广东省研究生示范课程1项</li>
- <li>实验室现有科研用房约1000平方米，拥有总值超5000万元的先进科研仪器设备，包括：小动物MR成像系统、PHILIPS Micro-CT、小动物PET成像系统、德国iThera Medical光声断层成像系统、Verasonics Vantage 128开放式多通道超声成像研究平台。课题组自身配备多种CT与PET成像设备，并与多家附属三甲医院深度合作，合作单位拥有多台全景（whole-body）PET-CT系统，可获取涵盖肿瘤、神经、心血管等领域的超万例高质量临床影像数据，为人工智能模型训练、验证及临床转化提供坚实数据基础</li>
- <li>目前课题组正在进行医学成像、人工智能、虚拟现实（VR）、混合现实（MR）、智能手术导航等前沿方向的研究， 实验室热诚欢迎社会各界联系合作，共同推进核医学PET成像事业发展！联系方式：lijunlu@gmail.com</li>
-</ul>
+  <section class="intro-subsection">
+    <h3>一、实验室概况</h3>
+
+    <p>欢迎来到南方医科大学 PET 成像实验室（SMU Positron Emission Computed Tomography Imaging Lab，SMU PET Lab）。实验室致力于生物医学领域 PET 成像技术的研发与应用，依托南方医科大学生物医学工程学院、广东省医学图像处理重点实验室和广东省琶洲实验室开展科研工作。</p>
+
+    <p>实验室由路利军教授于 2012 年组建，先后承担国家重点研发计划、国家自然科学基金及广东省科技计划等多层次科研项目，在 PET 成像、医学影像分析和人工智能辅助诊疗等方向形成了稳定的研究基础。</p>
+
+    <p>实验室现有科研用房约 1,000 平方米，拥有总值超过 5,000 万元的科研仪器设备，包括小动物 MR 成像系统、PHILIPS Micro-CT、小动物 PET 成像系统、德国 iThera Medical 光声断层成像系统和 Verasonics Vantage 128 开放式多通道超声成像研究平台等。</p>
+
+    <p>课题组还配备多套 CT 和 PET 成像设备，并与多家附属三甲医院开展深度合作。合作单位拥有多台全身 PET/CT 系统，可提供涵盖肿瘤、神经和心血管疾病等领域的高质量临床影像数据，为人工智能模型的训练、验证及临床转化提供良好基础。</p>
+  </section>
+
+  <section class="intro-subsection">
+    <h3>二、研究方向</h3>
+
+    <p>课题组主要从事 PET 成像与影像分析研究，目前重点围绕以下五个方向开展工作：</p>
+
+    <ol>
+      <li>动态 PET 心肌灌注成像技术；</li>
+      <li>全身及脑部 PET 影像的智能成像与分析；</li>
+      <li>磁场兼容 PET 及 PET/MRI 一体化成像技术；</li>
+      <li>鼻咽癌 PET/CT 放射组学研究；</li>
+      <li>基于大模型 AI 的恶性肿瘤核素诊疗一体化研究。</li>
+    </ol>
+
+    <h4>1. 动态 PET 心肌灌注成像</h4>
+    <p>PET 心肌灌注成像（Myocardial Perfusion Imaging，MPI）是一种用于检测心肌缺血的非侵入性检查方法，可为冠心病的早期诊断、危险度分层及治疗决策提供重要依据。与传统 SPECT 相比，PET 在成像灵敏度、空间分辨率及心肌血流定量等方面具有优势。</p>
+    <p>动态 PET 心肌灌注成像需要在示踪剂注入后连续采集多个时间帧。随着时间分辨率提高，单个时间帧内的计数减少，图像噪声增加，进而影响心肌血流定量和参数成像的准确性。针对这一问题，课题组重点研究融合结构先验、动态先验和深度学习先验的动态 PET 图像重建与直接参数成像方法，以提高图像质量及定量分析的可靠性。</p>
+
+    <h4>2. 全身及脑部 PET 影像的智能成像与分析</h4>
+    <p>该方向面向全身及脑部 PET 影像中的多器官和肿瘤精准分割、定量参数分析及疾病早期预测等关键问题，研究医学影像人工智能方法。</p>
+    <p>课题组拟构建面向医学影像的垂直领域大模型，融合 PET、CT、MRI 及临床信息等多模态数据，利用大模型的特征提取、知识表征和时空建模能力，探索小样本条件下的智能分析方法。研究重点包括复杂病灶识别、代谢异质性分析、疾病风险预测及预后评估等。</p>
+
+    <h4>3. 磁场兼容 PET 及 PET/MRI 一体化成像</h4>
+    <p>PET/MRI 一体化成像能够同时提供代谢、功能和解剖结构信息，但其系统研发和图像重建仍面临多项关键问题。</p>
+    <p>一方面，高磁场环境及有限的设备空间对 PET 探测器、电子学系统和数据采集模块的磁场兼容性提出了较高要求，需要降低磁场与电子系统之间的相互干扰。另一方面，MRI 信号不能直接反映组织的电子密度，传统基于 CT 的衰减校正方法无法直接应用。因此，课题组重点研究磁场兼容 PET 探测与成像技术、高质量 PET 图像重建方法，以及基于 MRI 数据的 PET 衰减校正方法。</p>
+
+    <h4>4. 鼻咽癌 PET/CT 放射组学研究</h4>
+    <p>该方向以鼻咽癌 PET/CT 影像为研究对象，系统考察图像采集模式、重建方法、后处理方法、肿瘤勾画和灰度离散化等因素对放射组学特征稳定性的影响。</p>
+    <p>课题组重点研究采用 ¹⁸F-FDG 和 ¹¹C-choline 两种示踪剂获得的鼻咽癌 PET/CT 影像，筛选具有较高鲁棒性的肿瘤纹理特征，并进一步评价其在治疗疗效评估、随访诊断及患者预后预测中的应用价值，为鼻咽癌个体化诊疗提供可靠的影像学依据。</p>
+
+    <h4>5. 基于大模型 AI 的恶性肿瘤核素诊疗一体化研究</h4>
+    <p>该方向面向恶性肿瘤核素诊断与治疗的一体化需求，研究大模型 AI 在医学影像分析、多模态诊疗信息融合及临床决策支持中的应用。</p>
+    <p>课题组将探索核医学影像、临床信息及其他多模态数据的协同建模方法，提升肿瘤识别、定量分析、疗效评估和预后预测能力，推动核医学影像分析与个体化诊疗技术的融合发展。</p>
+  </section>
+
+  <section class="intro-subsection">
+    <h3>三、招生与合作</h3>
+
+    <p>课题组目前面向以下类别招募对医学成像、人工智能和核医学交叉研究感兴趣的学生与科研人员。</p>
+
+    <h4>1. 本科生</h4>
+    <p>欢迎优秀本科生加入课题组，参与科研训练、大学生创新创业项目和毕业设计。课题组可根据学生的专业背景和研究兴趣，安排医学影像处理、深度学习、计算机视觉和科研软件开发等相关课题。</p>
+
+    <h4>2. 研究生</h4>
+    <p>课题组招收硕士研究生和博士研究生。我们希望学生具备强大的内心和自驱力；对于习惯随波逐流、惰性躺平或简历“虚胖”的同学，请慎重选择。</p>
+    <p>欢迎具有生物医学工程、计算机科学、人工智能、医学影像、数学、物理及相关专业背景的学生报考。具体招生专业、名额和要求以南方医科大学及生物医学工程学院当年发布的招生信息为准。</p>
+
+    <h4>3. 博士后</h4>
+    <p>课题组长期欢迎具有医学成像、人工智能、计算机视觉、医学物理、核医学或相关研究背景的优秀博士申请博士后岗位。</p>
+  </section>
   </section>
    
 
