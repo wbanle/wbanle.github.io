@@ -194,103 +194,221 @@ Powered by Hydejack v8.4.0 <https://hydejack.com/>
 
 
    
-  <ul style="font-family: Arial, sans-serif;">
-   <table class="imgtable"><tr valign="middle">
+  <style>
+    .members-directory {
+      font-family: Arial, sans-serif;
+    }
 
-     <td align="left">
-         <img src="/assets/img/lijunlu.jpg" alt="路利军" border="128" width=256/>
-         <p><span style="font-size: 110%"><b>Principle Investigator:路利军（LIjun Lu）</b></p>
-         <p>
-             Prof.Lu is currently a professor at the School of Biomedical Engineering, Southern Medical University, Guangzhou, Guangdong, China, 
-             and serves as a Ph.D. supervisor and Director of the Department of Medical Engineering. He is a recipient of the Pearl River Talented Young 
-             Investigator award of Guangdong Province and was a visiting scholar at Johns Hopkins University, USA. His main research interests include PET imaging and image analysis.
-             Prof.Lu has led or completed 4 projects funded by the National Natural Science Foundation of China (NSFC), 1 project under the National Key R&D Program of the Ministry of Science and Technology of China, 1 Guangdong Provincial Science and Technology Program international cooperation project, 4 projects funded by the Natural Science Foundation of Guangdong Province, 1 Doctoral Program Fund project of the Ministry of Education, 1 Guangdong Provincial Quality Engineering university–industry joint laboratory project, and 1 Guangdong Provincial postgraduate model course.
-             He has published over 60 SCI-indexed papers as the first or corresponding author in leading medical imaging journals, including Medical Image Analysis (MedIA), European Journal of Nuclear Medicine and Molecular Imaging (EJNMMI), IEEE Journal of Biomedical and Health Informatics (IEEE JBHI), Radiology: Artificial Intelligence, European Radiology, Molecular Imaging and Biology, Physics in Medicine & Biology, and Medical Physics. He holds 10 authorized Chinese invention patents. Dr. Lu serves as a reviewer for more than ten journals, including IEEE Transactions on Medical Imaging, IEEE Journal of Biomedical and Health Informatics, European Radiology, and Physics in Medicine & Biology. He also serves as a committee member of the Youth Working Committee of the Chinese Society of Biomedical Engineering, a committee member of the Medical Image Information and Control Branch, a committee member of the Intelligent Imaging Branch of the Chinese Society for Stereology, and Chair of the Intelligent Medical Imaging Branch of the Guangdong Society of Biomedical Engineering.
-         </p>
-         <p>
-             南方医科大学生物医学工程学院教授，博士生导师，医学工程系主任。广东省珠江学者青年学者，美国约翰霍普金斯大学访问学者。研究方向为PET成像与影像分析。
-             以项目负责人主持/完成国家自然科学基金4项，国家科技部重点研发计划课题1项，广东省科技计划国际合作项目1项，广东省自然科学基金4项，
-             教育部高等学校博士点基金1项，广东省质量工程校企联合实验室项目1项，广东省研究生示范课程1项。
-             以一作/通讯作者在MedIA、EJNMMI、IEEE JBHI、Radiology: AI、Euro Radiol、Mol Imaging Biol、Phy Med Biol、Med Phys等医学影像权威期刊发表SCI论文60余篇；
-             获国家发明专利授权10项。担任IEEE-TMI、IEEE-JBHI、Euro Radio、Phys Med Biol等十余种期刊审稿人；担任中国生物医学工程学会青年工作委员会委员、医学图像信息与控制分会委员，中国体视学会智能成像分会委员，广东省生物医学工程学会智能医学影像分会主任委员。
-         </p>
-     </td>
-   </table>
+    .member-section {
+      margin: 0 0 2.75rem;
+    }
 
+    .member-section-title {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid #b8bec5;
+      font-family: Arial, sans-serif;
+      font-size: 1.35rem;
+    }
 
-   <table class="imgtable"><tr valign="middle">
+    .faculty-list {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.25rem;
+    }
 
-     <td align="left">
-         <img src="/assets/img/wenbin.png" alt="吕闻冰" border="128" width=256/>
-         <p><span style="font-size: 110%"><b>吕闻冰（Wenbin Lv）</b></p>
-         <p>
-             云南大学信息学院副教授，云南大学信息学院信息与电子工程系主任。博士毕业于南方医科大学生物医学工程学院，加拿大不列颠哥伦比亚大学访问学者，入选云南大学青年人才培优计划，获得云南省“兴滇英才支持计划”青年人才称号。
-             研究方向为肿瘤医学图像分析与临床应用，长期致力于多模态医学图像智能诊疗关键技术研究。在领域权威期刊发表论文20余篇，Google Scholar引用1098次，H-index=15，单篇最高引用166次，引用量60次以上论文10篇。
-             主持国自然青年项目1项，博士后面上项目1项，人才启动项目1项，省市校级项目6项。 研究方向为：PET/CT、MRI影像鼻咽癌、头颈癌诊断与预后建模；鼻咽癌EBV DNA动态风险预测；CT剂量图像放射性肺炎预测；PET双示踪剂图像分离、生成；结直肠内镜图像分级；乳腺容积超声分割、分类；CT眼科肿瘤病理分型；CT急性胰腺炎分割。
+    .faculty-card {
+      display: grid;
+      grid-template-columns: 10rem minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: start;
+      padding: 1.25rem;
+      background: #f5f6f7;
+      border: 1px solid #e1e4e8;
+      border-radius: 0.6rem;
+    }
 
+    .faculty-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 0.35rem;
+      background: #eef1f4;
+    }
 
-         </p>
-     </td>
-   </table>
+    .faculty-card h3 {
+      margin: 0 0 0.65rem;
+      font-family: Arial, sans-serif;
+      font-size: 1.15rem;
+    }
 
+    .faculty-role {
+      display: block;
+      margin-top: 0.2rem;
+      color: #666;
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
 
-   <table class="imgtable"><tr valign="middle">
+    .faculty-card p {
+      margin: 0 0 0.85rem;
+      line-height: 1.7;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
 
-     <td align="left">
-         <img src="/assets/img/sunhao.png" alt="孙浩" border="128" width=256/>
-         <p><span style="font-size: 110%"><b>孙浩（Hao Sun）</b></p>
-         <p>
-             南方医科大学生物医学工程学院青年教师。日内瓦大学、澳门大学访问学者，广东省生物医学工程学会智能医学影像分会秘书，澳门核医学与分子影像学会会员。
-             研究方向为：SPECT和PET图像衰减校正，低剂量PET成像，动态PET参数成像。
-         </p>
-     </td>
-   </table>
+    .faculty-card p:last-child {
+      margin-bottom: 0;
+    }
 
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1.35rem 0.85rem;
+    }
 
-   <table class="imgtable"><tr valign="middle">
-     <td align="left">
-        <p><span style="font-size: 110%"><b>PhD students：</b></p>
-        <p>
-            叶赞挺（Zanting Ye）&nbsp;       牛小龙（Xiaolong Niu）&nbsp;    钟育添（Yutian Zhong）&nbsp;     易文翔（Wenxiang Yi）&nbsp;    胡潮滨（Chaobin Hu）&nbsp; 
-        </p>
-     </td>
-   </table>
+    .member-card {
+      min-width: 0;
+      text-align: center;
+    }
 
-   <table class="imgtable"><tr valign="middle">
-     <td align="left">
-        <p><span style="font-size: 110%"><b>PhD Graduate：</b></p>
-        <p>
-            吕闻冰（Wenbin Lv）&nbsp;       徐慧（Hui Xu）&nbsp;          杜东阳（Dongyang Du）&nbsp;          
-            曹双亮（Shuangliang Cao）&nbsp;          孙浩（Hao Sun）&nbsp;          洪晓彤（Xiaotong Hong）&nbsp;   张杨梅（Yangmei Zhang）&nbsp;  
-        </p>
-     </td>
-   </table>
-    
-  
-   <table class="imgtable"><tr valign="middle">
-     <td align="left">
-        <p><span style="font-size: 110%"><b>Master's students：</b></p>
-        <p>
-            魏怡博（Yibo Wei）&nbsp;       卢婉彤（Wantong Lu）&nbsp;  黄梓君（Zijun Huang）&nbsp;  王航宇（Hangyu Wang）&nbsp;
-            常远（Yuan Chang）&nbsp;  吴炫彬（Xuanbin Wu）&nbsp; 包珊琪（Shanqi Bao）&nbsp;
-            宋歌（Ge Song）&nbsp;   卢锦梦（Jinmeng Lu）&nbsp;  林云瑞（Yunrui Lin）&nbsp;
-        </p>
-     </td>
-   </table>
+    .member-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border: 1px solid #dde1e5;
+      border-radius: 0.3rem;
+      background: #eef1f4 url('/assets/img/members/photo/placeholder.svg') center / cover no-repeat;
+    }
 
-  <table class="imgtable"><tr valign="middle">
-     <td align="left">
-        <p><span style="font-size: 110%"><b>Master's Graduate：</b></p>
-        <p>
-            胡德斌（Debin Hu）&nbsp;  黄衍超（Yanchao Huang）&nbsp;  吕洁勤（Jieqin Lv）&nbsp;  周子栋（Zidong Zhou）&nbsp;  
-            贺钰茹（Yuru He）&nbsp; 王方虎（Fanghu Wang）&nbsp; 吴惠琴（Huiqin Wu）&nbsp;
-            彭俊毅（Junyi Peng）&nbsp;    阳钰铃（Yuling Yang）&nbsp; 韩绪（Xu Han）&nbsp;
-            卢逸君（Yijun Lu）&nbsp;  郑淳丹（Chundan Zheng）&nbsp;  
-        </p>
-     </td>
-   </table>
-  
-  </ul>
+    .member-name {
+      margin: 0.55rem 0 0;
+      line-height: 1.35;
+      font-size: 0.86rem;
+    }
+
+    .member-name span {
+      display: block;
+    }
+
+    .member-name-en {
+      color: #555;
+      font-size: 0.82rem;
+    }
+
+    @media screen and (max-width: 54em) {
+      .member-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (max-width: 38em) {
+      .faculty-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .faculty-photo {
+        width: min(11rem, 65%);
+        margin: 0 auto;
+      }
+
+      .member-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+
+  <div class="members-directory">
+    <section class="member-section">
+      <h2 class="member-section-title">Faculty</h2>
+      <div class="faculty-list">
+        <article class="faculty-card">
+          <img class="faculty-photo" src="/assets/img/members/photo/lijunlu.jpg" alt="Lijun Lu" />
+          <div>
+            <h3>路利军（Lijun Lu）<span class="faculty-role">Principal Investigator</span></h3>
+            <p>Prof. Lu is currently a professor at the School of Biomedical Engineering, Southern Medical University, Guangzhou, Guangdong, China, and serves as a Ph.D. supervisor and Director of the Department of Medical Engineering. He is a recipient of the Pearl River Talented Young Investigator award of Guangdong Province and was a visiting scholar at Johns Hopkins University, USA. His main research interests include PET imaging and image analysis. Prof. Lu has led or completed 4 projects funded by the National Natural Science Foundation of China (NSFC), 1 project under the National Key R&amp;D Program of the Ministry of Science and Technology of China, 1 Guangdong Provincial Science and Technology Program international cooperation project, 4 projects funded by the Natural Science Foundation of Guangdong Province, 1 Doctoral Program Fund project of the Ministry of Education, 1 Guangdong Provincial Quality Engineering university–industry joint laboratory project, and 1 Guangdong Provincial postgraduate model course. He has published over 60 SCI-indexed papers as the first or corresponding author in leading medical imaging journals, including Medical Image Analysis (MedIA), European Journal of Nuclear Medicine and Molecular Imaging (EJNMMI), IEEE Journal of Biomedical and Health Informatics (IEEE JBHI), Radiology: Artificial Intelligence, European Radiology, Molecular Imaging and Biology, Physics in Medicine &amp; Biology, and Medical Physics. He holds 10 authorized Chinese invention patents. Dr. Lu serves as a reviewer for more than ten journals, including IEEE Transactions on Medical Imaging, IEEE Journal of Biomedical and Health Informatics, European Radiology, and Physics in Medicine &amp; Biology. He also serves as a committee member of the Youth Working Committee of the Chinese Society of Biomedical Engineering, a committee member of the Medical Image Information and Control Branch, a committee member of the Intelligent Imaging Branch of the Chinese Society for Stereology, and Chair of the Intelligent Medical Imaging Branch of the Guangdong Society of Biomedical Engineering.</p>
+            <p>南方医科大学生物医学工程学院教授，博士生导师，医学工程系主任。广东省珠江学者青年学者，美国约翰霍普金斯大学访问学者。研究方向为PET成像与影像分析。以项目负责人主持/完成国家自然科学基金4项，国家科技部重点研发计划课题1项，广东省科技计划国际合作项目1项，广东省自然科学基金4项，教育部高等学校博士点基金1项，广东省质量工程校企联合实验室项目1项，广东省研究生示范课程1项。以一作/通讯作者在MedIA、EJNMMI、IEEE JBHI、Radiology: AI、Euro Radiol、Mol Imaging Biol、Phy Med Biol、Med Phys等医学影像权威期刊发表SCI论文60余篇；获国家发明专利授权10项。担任IEEE-TMI、IEEE-JBHI、Euro Radio、Phys Med Biol等十余种期刊审稿人；担任中国生物医学工程学会青年工作委员会委员、医学图像信息与控制分会委员，中国体视学会智能成像分会委员，广东省生物医学工程学会智能医学影像分会主任委员。</p>
+          </div>
+        </article>
+
+        <article class="faculty-card">
+          <img class="faculty-photo" src="/assets/img/members/photo/wenbin.png" alt="Wenbin Lv" loading="lazy" />
+          <div>
+            <h3>吕闻冰（Wenbin Lv）</h3>
+            <p>云南大学信息学院副教授，云南大学信息学院信息与电子工程系主任。博士毕业于南方医科大学生物医学工程学院，加拿大不列颠哥伦比亚大学访问学者，入选云南大学青年人才培优计划，获得云南省“兴滇英才支持计划”青年人才称号。研究方向为肿瘤医学图像分析与临床应用，长期致力于多模态医学图像智能诊疗关键技术研究。在领域权威期刊发表论文20余篇，Google Scholar引用1098次，H-index=15，单篇最高引用166次，引用量60次以上论文10篇。主持国自然青年项目1项，博士后面上项目1项，人才启动项目1项，省市校级项目6项。研究方向为：PET/CT、MRI影像鼻咽癌、头颈癌诊断与预后建模；鼻咽癌EBV DNA动态风险预测；CT剂量图像放射性肺炎预测；PET双示踪剂图像分离、生成；结直肠内镜图像分级；乳腺容积超声分割、分类；CT眼科肿瘤病理分型；CT急性胰腺炎分割。</p>
+          </div>
+        </article>
+
+        <article class="faculty-card">
+          <img class="faculty-photo" src="/assets/img/members/photo/sunhao.png" alt="Hao Sun" loading="lazy" />
+          <div>
+            <h3>孙浩（Hao Sun）</h3>
+            <p>南方医科大学生物医学工程学院青年教师。日内瓦大学、澳门大学访问学者，广东省生物医学工程学会智能医学影像分会秘书，澳门核医学与分子影像学会会员。研究方向为：SPECT和PET图像衰减校正，低剂量PET成像，动态PET参数成像。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="member-section-title">PhD Students</h2>
+      <div class="member-grid">
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Zanting Ye" loading="lazy" /><p class="member-name"><span>叶赞挺</span><span class="member-name-en">Zanting Ye</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Xiaolong Niu" loading="lazy" /><p class="member-name"><span>牛小龙</span><span class="member-name-en">Xiaolong Niu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yutian Zhong" loading="lazy" /><p class="member-name"><span>钟育添</span><span class="member-name-en">Yutian Zhong</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Wenxiang Yi" loading="lazy" /><p class="member-name"><span>易文翔</span><span class="member-name-en">Wenxiang Yi</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Chaobin Hu" loading="lazy" /><p class="member-name"><span>胡潮滨</span><span class="member-name-en">Chaobin Hu</span></p></div>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="member-section-title">PhD Graduates</h2>
+      <div class="member-grid">
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/wenbin.png" alt="Wenbin Lv" loading="lazy" /><p class="member-name"><span>吕闻冰</span><span class="member-name-en">Wenbin Lv</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Hui Xu" loading="lazy" /><p class="member-name"><span>徐慧</span><span class="member-name-en">Hui Xu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Dongyang Du" loading="lazy" /><p class="member-name"><span>杜东阳</span><span class="member-name-en">Dongyang Du</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Shuangliang Cao" loading="lazy" /><p class="member-name"><span>曹双亮</span><span class="member-name-en">Shuangliang Cao</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/sunhao.png" alt="Hao Sun" loading="lazy" /><p class="member-name"><span>孙浩</span><span class="member-name-en">Hao Sun</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Xiaotong Hong" loading="lazy" /><p class="member-name"><span>洪晓彤</span><span class="member-name-en">Xiaotong Hong</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yangmei Zhang" loading="lazy" /><p class="member-name"><span>张杨梅</span><span class="member-name-en">Yangmei Zhang</span></p></div>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="member-section-title">Master Students</h2>
+      <div class="member-grid">
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yibo Wei" loading="lazy" /><p class="member-name"><span>魏怡博</span><span class="member-name-en">Yibo Wei</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Wantong Lu" loading="lazy" /><p class="member-name"><span>卢婉彤</span><span class="member-name-en">Wantong Lu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Zijun Huang" loading="lazy" /><p class="member-name"><span>黄梓君</span><span class="member-name-en">Zijun Huang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Hangyu Wang" loading="lazy" /><p class="member-name"><span>王航宇</span><span class="member-name-en">Hangyu Wang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yuan Chang" loading="lazy" /><p class="member-name"><span>常远</span><span class="member-name-en">Yuan Chang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Xuanbin Wu" loading="lazy" /><p class="member-name"><span>吴炫彬</span><span class="member-name-en">Xuanbin Wu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Shanqi Bao" loading="lazy" /><p class="member-name"><span>包珊琪</span><span class="member-name-en">Shanqi Bao</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Ge Song" loading="lazy" /><p class="member-name"><span>宋歌</span><span class="member-name-en">Ge Song</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Jinmeng Lu" loading="lazy" /><p class="member-name"><span>卢锦梦</span><span class="member-name-en">Jinmeng Lu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yunrui Lin" loading="lazy" /><p class="member-name"><span>林云瑞</span><span class="member-name-en">Yunrui Lin</span></p></div>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="member-section-title">Master Graduates</h2>
+      <div class="member-grid">
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Debin Hu" loading="lazy" /><p class="member-name"><span>胡德斌</span><span class="member-name-en">Debin Hu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yanchao Huang" loading="lazy" /><p class="member-name"><span>黄衍超</span><span class="member-name-en">Yanchao Huang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Jieqin Lv" loading="lazy" /><p class="member-name"><span>吕洁勤</span><span class="member-name-en">Jieqin Lv</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Zidong Zhou" loading="lazy" /><p class="member-name"><span>周子栋</span><span class="member-name-en">Zidong Zhou</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yuru He" loading="lazy" /><p class="member-name"><span>贺钰茹</span><span class="member-name-en">Yuru He</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Fanghu Wang" loading="lazy" /><p class="member-name"><span>王方虎</span><span class="member-name-en">Fanghu Wang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Huiqin Wu" loading="lazy" /><p class="member-name"><span>吴惠琴</span><span class="member-name-en">Huiqin Wu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Junyi Peng" loading="lazy" /><p class="member-name"><span>彭俊毅</span><span class="member-name-en">Junyi Peng</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yuling Yang" loading="lazy" /><p class="member-name"><span>阳钰铃</span><span class="member-name-en">Yuling Yang</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Xu Han" loading="lazy" /><p class="member-name"><span>韩绪</span><span class="member-name-en">Xu Han</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Yijun Lu" loading="lazy" /><p class="member-name"><span>卢逸君</span><span class="member-name-en">Yijun Lu</span></p></div>
+        <div class="member-card"><img class="member-photo" src="/assets/img/members/photo/placeholder.svg" alt="Photo placeholder for Chundan Zheng" loading="lazy" /><p class="member-name"><span>郑淳丹</span><span class="member-name-en">Chundan Zheng</span></p></div>
+      </div>
+    </section>
+  </div>
    
 
 

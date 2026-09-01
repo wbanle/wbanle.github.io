@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title desc">
+  <title id="title">Member photo placeholder</title>
+  <desc id="desc">A neutral silhouette used until an individual portrait is available.</desc>
+  <rect width="600" height="800" fill="#eef1f4"/>
+  <circle cx="300" cy="275" r="125" fill="#c4cbd3"/>
+  <path d="M90 735c12-180 95-285 210-285s198 105 210 285" fill="#c4cbd3"/>
+  <text x="300" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#7a8490">PHOTO</text>
+</svg>
